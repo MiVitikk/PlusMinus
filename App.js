@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Result: {answer}</Text>
+      <Text style={styles.answer}>Result: {answer}</Text>
       <StatusBar style="auto" />
       <View style={{ flexDirection: 'column'}}>
         <TextInput
@@ -63,4 +63,7 @@ const styles = StyleSheet.create({
     padding: 10,
     width: 100
   },
+  answer: {
+    fontWeight: 'bold'
+  }
 });
